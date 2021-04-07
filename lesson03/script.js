@@ -1,9 +1,21 @@
 // 1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100.
+console.log('Задание 1');
 
-let i = 1;
+let i = 2;
 
 while (i <= 100) {
-    console.log(i);
+    let simple = true;
+    let j = 2;
+    while (j < i) {
+        if (i % j == 0) {
+            simple = false;
+            break;
+        }
+        j++
+    }
+    if (simple == true) {
+        console.log(i);
+    }
     i++;
 }
 
@@ -13,21 +25,25 @@ while (i <= 100) {
 // Товары в корзине хранятся в массиве.
 // Задачи:
 // a) Организовать такой массив для хранения товаров в корзине;
+console.log('Задание 2');
 
-let cart = [1000, 500, 50, 150];
+let cart = [['товар1','товар2','товар3','товар4'],[1,3,2,5],[1000, 500, 50, 150]];
 
 // b) Организовать функцию countBasketPrice, которая будет считать стоимость корзины.
 
 function countBasketPrice(cart) {
     let sum = 0;
-    for (let i = 0; i < cart.length; i++) {
-        sum += cart[i];
+    for (let i = 0; i < cart[1].length; i++) {
+        sum += cart[1][i] * cart[2][i];
     }
     return sum;
 }
 
+console.log(countBasketPrice(cart));
+
 // 3.*Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла. Выглядеть это должно так:
 // for(…){// здесь пусто}
+console.log('Задание 3');
 
 for (let i = 0; i < 10; console.log(i++)) {}
 
@@ -37,8 +53,7 @@ for (let i = 0; i < 10; console.log(i++)) {}
 // xxx
 // xxxx
 // xxxxx
+console.log('Задание 4');
 
 let str = '';
-for (let i = 1; i <= 20; i++) {
-    console.log(str += 'x');
-}
+for (let i = 1; i <= 20; i++, console.log(str += 'x')) {}
