@@ -1,0 +1,100 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.desk {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50px)[9];
+      grid-template-columns: repeat(9, 50px);
+  -ms-grid-rows: (50px)[9];
+      grid-template-rows: repeat(9, 50px);
+  background-color: #8b721e;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 4px solid #8b721e;
+  margin: 20px;
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  background-color: #fff;
+}
+
+.square-black {
+  background: #000;
+}
+
+.square-out {
+  background-color: #8b721e;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.catalog {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+}
+
+.catalog-title {
+  font-size: 24px;
+}
+
+.catalog-item {
+  outline: 2px solid green;
+  padding: 10px;
+  margin: 10px;
+  background-color: azure;
+}
+
+.cart {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+}
+
+.cart-title {
+  font-size: 24px;
+}
+
+.cart-item {
+  outline: 2px solid green;
+  padding: 10px;
+  margin: 10px;
+  background-color: azure;
+}
+
+.cart-sum {
+  font-size: 24px;
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
